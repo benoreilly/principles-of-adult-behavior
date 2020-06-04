@@ -5,7 +5,7 @@
 
 body {
   background-color: #214a7b;
-  background-image: linear-gradient(to top, rgb(74, 144, 226), rgb(29, 67, 113));
+  /* background-image: linear-gradient(to top, rgb(74, 144, 226), rgb(29, 67, 113)); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,16 +15,22 @@ body {
   margin: 0;
 }
 
+.container {
+  margin-top: 60px;
+}
+
 section#main-section .container.page-container {
   width: 95% !important;
 }
 
-.container {
-    margin-top: 60px;
+.viewBtn-grid,
+.viewBtn-list {
+  margin-right: 8px;
+  cursor: pointer;
 }
 
+
 .page-header-container {
-  display: flex;
   font-family: Raleway;
   justify-content: center;
   background-color: rgba(255, 164, 27, 0.579);
@@ -42,6 +48,10 @@ h5.page-sub-header {
   font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
+}
+
+.hideList {
+  display: none;
 }
 
 
