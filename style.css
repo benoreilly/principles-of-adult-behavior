@@ -51,7 +51,7 @@ h5.page-sub-header {
 .grid-view {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-auto-rows: auto;
   grid-column-gap: 20px;
 }
 
@@ -63,8 +63,7 @@ h5.page-sub-header {
 }
 
 .endure {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: 1 / 4;
 }
 span.endure {
   font-size: 2.5rem;
@@ -78,13 +77,6 @@ span.endure {
 
 @media only screen and (max-width: 600px) {
   .grid-item {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .endure {
     grid-column-start: 1;
     grid-column-end: 4;
   }
